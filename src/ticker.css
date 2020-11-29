@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&amp;family=Roboto+Mono:wght@100;400&amp;display=swap);
+
+ul.board {
+  background-color: black;
+  font-family: "Nanum Gothic Coding", "Roboto Mono", monospace;
+  display: flex;
+  list-style: none;
+  color: hsl(60, 50%, 65%);
+  font-size: 3rem;
+  margin: 0;
+  padding: 0.25rem;
+  overflow-x: hidden;
+}
+
+li.ticker span {
+  display: block;
+  background-image: url("./ticker-bg.svg");
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  border-radius: 0.125rem;
+  padding: 0.25rem 0.5rem;
+  overflow-y: hidden;
+  box-shadow: 0 0 0.25rem 0 rgba(193, 193, 193, 0.5);
+}
+
+li.ticker span.enter {
+  animation: squeeze 0.05s linear 1;
+}
+@keyframes squeeze {
+  50% {
+    transform: scaleY(0);
+  }
+}
