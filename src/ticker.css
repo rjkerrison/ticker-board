@@ -2,7 +2,7 @@
 
 ul.board {
   background-color: black;
-  font-family: "Nanum Gothic Coding", "Roboto Mono", monospace;
+  font-family: 'Nanum Gothic Coding', 'Roboto Mono', monospace;
   display: flex;
   list-style: none;
   color: hsl(60, 50%, 65%);
@@ -14,7 +14,7 @@ ul.board {
 
 li.ticker span {
   display: block;
-  background-image: url("./ticker-bg.svg");
+  background-image: url('./ticker-bg.svg');
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
@@ -24,8 +24,8 @@ li.ticker span {
   box-shadow: 0 0 0.25rem 0 rgba(193, 193, 193, 0.5);
 }
 
-li.ticker span.enter {
-  animation: squeeze 0.05s linear 1;
+li.ticker span.animating {
+  animation: squeeze 0.075s ease-in-out infinite;
 }
 @keyframes squeeze {
   50% {

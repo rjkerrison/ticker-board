@@ -34,9 +34,10 @@ Array.prototype.padEnd = function (item, length) {
 // Ticker board effect
 class TickerCard {
   acceptableCodes = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,'-\xa0`
+  delayInMilliseconds = 25
 
   constructor(letter) {
-    this.targetLetter = this.visibleLetter = letter
+    this.visibleLetter = letter
     this.createElement()
   }
 
@@ -44,7 +45,7 @@ class TickerCard {
     this.element = document.createElement('li')
     this.element.classList.add('ticker')
     const span = document.createElement('span')
-    span.innerText = this.targetLetter
+    span.innerText = this.visibleLetter
     this.element.appendChild(span)
   }
 
@@ -53,25 +54,37 @@ class TickerCard {
     this.render()
   }
 
-  update(letter) {
-    if (this.targetLetter === letter) {
+  animateTo(letter) {
+    if (this.visibleLetter === letter) {
       return
     }
     const letters = (this.acceptableCodes + this.acceptableCodes)
-      .sliceAt(this.targetLetter)
+      .sliceAt(this.visibleLetter)
       .sliceTo(letter)
 
-    Array.from(letters).forEach((l, i) => {
-      setTimeout(() => this.changeCharacter(l), i * 25)
-    })
-    this.targetLetter = letter
+    let start
+    const updateLetter = (timestamp) => {
+      if (start === undefined) {
+        start = timestamp
+      }
+      const elapsed = timestamp - start
+      const letterIndex = Math.floor(elapsed / this.delayInMilliseconds)
+
+      if (letterIndex < letters.length) {
+        this.changeCharacter(letters[letterIndex])
+        window.requestAnimationFrame(updateLetter)
+      } else {
+        this.changeCharacter(letter)
+        this.element.firstElementChild.classList.remove('animating')
+      }
+    }
+
+    this.element.firstElementChild.classList.add('animating')
+    window.requestAnimationFrame(updateLetter)
   }
 
   render() {
-    window.requestAnimationFrame(() => {
-      this.element.firstElementChild.innerText = this.visibleLetter
-      this.element.firstElementChild.classList.toggle('enter')
-    })
+    this.element.firstElementChild.innerText = this.visibleLetter
   }
 }
 
@@ -92,7 +105,7 @@ class TickerRow {
   changeMessage() {
     let newMessage = this.message.replace(/\s/g, NON_BREAKING_SPACE)
     this.cards.forEach((card, i) => {
-      setTimeout(() => card.update(newMessage[i]), i * this.delay)
+      setTimeout(() => card.animateTo(newMessage[i]), i * this.delay)
     })
   }
 
