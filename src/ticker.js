@@ -43,7 +43,9 @@ class TickerCard {
   createElement() {
     this.element = document.createElement('li')
     this.element.classList.add('ticker')
-    this.element.innerHTML = `<span>${this.targetLetter}</span>`
+    const span = document.createElement('span')
+    span.innerText = this.targetLetter
+    this.element.appendChild(span)
   }
 
   changeCharacter(letter) {
