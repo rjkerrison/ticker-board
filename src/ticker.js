@@ -126,13 +126,12 @@ class TickerRow {
 }
 
 class Board {
-  constructor(element, count, size, options) {
+  constructor(element, { count, size, delay }) {
     this.element = element
     this.messages = new Array(count).fill(''.padEnd(size, NON_BREAKING_SPACE))
     this.createTickers(size)
     this.options = {
-      delay: 250,
-      ...options,
+      delay: delay || 250,
     }
     this.update()
   }
