@@ -13,7 +13,8 @@
     <ul class="create-ticker">
       <li>Vanilla JS</li>
       <li>CSS included</li>
-      <li>Update message methods</li>
+      <li>Auto rotating board</li>
+      <li>Manual update API</li>
       <li>That's all so far</li>
     </ul>
     <p>
@@ -21,14 +22,30 @@
       good time reading these, for example. It is compatible with copying to
       clipboard, however.
     </p>
-    <p>Known bugs include:</p>
-    <ul>
-      <li>
-        A race condition, whereby the result of firing off a change to a ticker
-        board row while it's already processing one results in some letters
-        potentially reflecting the earlier message
-      </li>
-    </ul>
+    <p>Example:</p>
+    <pre><code lang="javascript">
+new TickerBoard('.my-ticker-board')
+    </code></pre>
+    <p>
+      This would replace each of the children of any
+      <code>.my-ticker-board</code> matching element with a board which
+      automatically rotates through the inner text of that board. This is
+      exactly how the board above works.
+    </p>
+    <p>Example:</p>
+    <pre><code lang="javascript">
+document.getElementById('my-board')
+const board = new Board(element)
+board.updateMessages(['Apple', 'Banana', 'Cherry'])
+
+board.element.addEventListener('click', )
+    </code></pre>
+    <p>
+      This would replace each of the children of any
+      <code>.my-ticker-board</code> matching element with a board which
+      automatically rotates through the inner text of that board. This is
+      exactly how the board above works.
+    </p>
     <script src="src/ticker.js"></script>
     <script src="src/index.js"></script>
     <script src="main.js"></script>

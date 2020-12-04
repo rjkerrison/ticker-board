@@ -29,7 +29,7 @@ class RotationBoard extends Board {
 
     this.defaultMessage = new Array(options.size).fill('\xa0').join('')
     this.originalMessages = options.messages
-    this.delay = options.delay || 7500
+    this.delay = options.delay || 3500
     this.initialDelay = options.initialDelay || 1000
     this.rotate()
   }
