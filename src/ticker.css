@@ -11,7 +11,19 @@ ul.board {
   color: hsl(60, 50%, 65%);
 }
 
-li.ticker-row {
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+ul.board li div.ticker-row {
   display: flex;
   padding: 0.25rem;
 }
@@ -26,6 +38,10 @@ span.ticker {
   padding: 0.25rem 0.5rem;
   overflow-y: hidden;
   box-shadow: 0 0 0.25rem 0 rgba(193, 193, 193, 0.5);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 span.ticker.animating {

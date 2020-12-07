@@ -105,6 +105,7 @@ class TickerRow {
     this.cards.forEach((card, i) => {
       setTimeout(() => card.animateTo(newMessage[i]), i * this.delay)
     })
+    this.screenReaderElement.innerText = this.message
   }
 
   createCards() {
@@ -115,30 +116,45 @@ class TickerRow {
 
   render() {
     const element = document.createElement('li')
-    //element.setAttribute('aria-hidden', 'true')
-    element.classList.add('ticker-row')
+    const innerElement = document.createElement('div')
+    this.screenReaderElement = document.createElement('div')
+
+    innerElement.setAttribute('aria-hidden', 'true')
+    innerElement.classList.add('ticker-row')
+    this.screenReaderElement.classList.add('sr-only')
+
     this.cards.forEach((card) => {
-      element.appendChild(card.element)
+      innerElement.appendChild(card.element)
     })
+    element.append(this.screenReaderElement, innerElement)
     return element
   }
 }
 
 class Board {
   constructor(element, { count, size, delay }) {
-    const boardElement = document.createElement('ul')
-    boardElement.classList.add('board')
-    element.replaceWith(boardElement)
-    this.element = boardElement
     this.messages = new Array(count).fill(''.padEnd(size, NON_BREAKING_SPACE))
-    this.createTickers(size)
+    this._createElement(element)
+    this._createTickers(size)
     this.options = {
       delay: delay || 250,
     }
     this.update()
   }
 
-  createTickers(size) {
+  _createElement(element) {
+    const boardElement = document.createElement('ul')
+    boardElement.classList.add('board')
+    if (typeof element === 'string') {
+      element = document.querySelector(element)
+    }
+    if (element instanceof HTMLElement) {
+      element.replaceWith(boardElement)
+    }
+    this.element = boardElement
+  }
+
+  _createTickers(size) {
     this.tickers = this.messages.map((_, i) => this.setupTicker(size, i))
   }
 
