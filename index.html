@@ -4,48 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticker Board</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="src/ticker.css" />
   </head>
   <body>
-    <h1>Ticker Board</h1>
-    <p>This will be the landing page for my ticker board plugin.</p>
-    <p>Features include:</p>
-    <ul class="create-ticker">
-      <li>Vanilla JS</li>
-      <li>CSS included</li>
-      <li>Auto rotating board</li>
-      <li>Manual update API</li>
-      <li>That's all so far</li>
-    </ul>
-    <p>
-      It's currently not accessible. There's no way a screen reader would have a
-      good time reading these, for example. It is compatible with copying to
-      clipboard, however.
-    </p>
-    <p>Example:</p>
-    <pre><code lang="javascript">
-new TickerBoard('.my-ticker-board')
-    </code></pre>
-    <p>
-      This would replace each of the children of any
-      <code>.my-ticker-board</code> matching element with a board which
-      automatically rotates through the inner text of that board. This is
-      exactly how the board above works.
-    </p>
-    <p>Example:</p>
-    <pre><code lang="javascript">
-document.getElementById('my-board')
-const board = new Board(element)
-board.updateMessages(['Apple', 'Banana', 'Cherry'])
-
-board.element.addEventListener('click', )
-    </code></pre>
-    <p>
-      This would replace each of the children of any
-      <code>.my-ticker-board</code> matching element with a board which
-      automatically rotates through the inner text of that board. This is
-      exactly how the board above works.
-    </p>
+    <header>
+      <h1>Ticker Board</h1>
+      <p>This will be the landing page for my ticker board plugin.</p>
+    </header>
+    <main>
+      <p>Features include:</p>
+      <ul class="create-ticker">
+        <li>Vanilla JS</li>
+        <li>CSS included</li>
+        <li>Auto rotating board</li>
+        <li>Manual update API</li>
+        <li>That's all so far</li>
+      </ul>
+      <p>
+        It's currently not accessible. There's no way a screen reader would have
+        a good time reading these, for example. It is compatible with copying to
+        clipboard, however.
+      </p>
+      <p>Example:</p>
+      <pre><code lang="javascript">
+        new TickerBoard('.my-ticker-board')
+      </code></pre>
+      <p>
+        This would replace each of the children of any
+        <code>.my-ticker-board</code> matching element with a board which
+        automatically rotates through the inner text of that board. This is
+        exactly how the board above works.
+      </p>
+      <p>Example:</p>
+      <pre><code lang="javascript">
+        document.getElementById('my-board')
+        const board = new Board(element)
+        board.updateMessages(['Apple', 'Banana', 'Cherry'])
+        
+        board.element.addEventListener('click', )
+      </code></pre>
+      <p>
+        This would replace each of the children of any
+        <code>.my-ticker-board</code> matching element with a board which
+        automatically rotates through the inner text of that board. This is
+        exactly how the board above works.
+      </p>
+    </main>
+    <footer>
+      <p>&copy; Robin James Kerrison 2020</p>
+    </footer>
     <script src="src/ticker.js"></script>
     <script src="src/index.js"></script>
     <script src="main.js"></script>
