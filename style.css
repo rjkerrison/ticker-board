@@ -10,4 +10,41 @@ body {
   background-size: 10rem 10rem;
   color: rgb(245, 240, 209);
   font-family: 'Oxygen', 'Helvetica', sans-serif;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  font-size: 1.75rem;
+}
+
+main {
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: 1.25rem;
+}
+
+a {
+  color: yellow;
+}
+a:visited {
+  color: orange;
+}
+
+pre {
+  text-align: left;
+  background: black;
+  padding: 1rem;
+}
+
+section {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: 1rem 0;
 }

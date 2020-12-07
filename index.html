@@ -11,45 +11,58 @@
     <header>
       <h1>Ticker Board</h1>
       <p>This will be the landing page for my ticker board plugin.</p>
+      <p class="create-ticker">
+        <span>A JS plugin</span> <span>for ticker boards</span>
+      </p>
     </header>
     <main>
-      <p>Features include:</p>
-      <ul class="create-ticker">
-        <li>Vanilla JS</li>
-        <li>CSS included</li>
-        <li>Auto rotating board</li>
-        <li>Manual update API</li>
-        <li>That's all so far</li>
-      </ul>
-      <p>
-        It's currently not accessible. There's no way a screen reader would have
-        a good time reading these, for example. It is compatible with copying to
-        clipboard, however.
-      </p>
-      <p>Example:</p>
-      <pre><code lang="javascript">
-        new TickerBoard('.my-ticker-board')
-      </code></pre>
-      <p>
-        This would replace each of the children of any
-        <code>.my-ticker-board</code> matching element with a board which
-        automatically rotates through the inner text of that board. This is
-        exactly how the board above works.
-      </p>
-      <p>Example:</p>
-      <pre><code lang="javascript">
-        document.getElementById('my-board')
-        const board = new Board(element)
-        board.updateMessages(['Apple', 'Banana', 'Cherry'])
-        
-        board.element.addEventListener('click', )
-      </code></pre>
-      <p>
-        This would replace each of the children of any
-        <code>.my-ticker-board</code> matching element with a board which
-        automatically rotates through the inner text of that board. This is
-        exactly how the board above works.
-      </p>
+      <section id="features">
+        <h2>Included features</h2>
+        <p>The features include:</p>
+        <ul class="create-ticker">
+          <li>Vanilla JS</li>
+          <li>CSS included</li>
+          <li>Auto rotating board</li>
+          <li>Manual update API</li>
+          <li>That's all so far</li>
+        </ul>
+        <p>
+          It's currently not accessible. There's no way a screen reader would
+          have a good time reading these, for example. It is compatible with
+          copying to clipboard, however.
+        </p>
+      </section>
+      <section>
+        <h2>How-to Guide</h2>
+        <p>
+          Import the library JavaScript at
+          <a href="src/ticker.js">ticker.js</a> and
+          <a href="src/index.js">index.js</a> (minified package not yet ready).
+        </p>
+        <p>After importing the JS, the simplest way to get set up is with…</p>
+        <pre><code lang="javascript">new TickerBoard('.my-ticker-board')</code></pre>
+        <p>
+          This would replace each of the children of any
+          <code>.my-ticker-board</code> matching element with a board which
+          automatically rotates through the inner text of that board. This is
+          exactly how the <a href="#features">board showing features</a> works!
+        </p>
+      </section>
+      <section>
+        <h2>Other Examples</h2>
+        <pre><code lang="javascript">document.getElementById('my-board')
+const board = new Board(element)
+board.updateMessages(['Apple', 'Banana', 'Cherry'])</code></pre>
+        <p>
+          This would just update the board with some fruit names, and then not
+          update again. If you want to update the board, use the
+          <code>updateMessages</code> method to do so.
+        </p>
+        <p>
+          Another example uses <a href="./sncf.html">SNCF Live Data</a> to
+          update the board with train times.
+        </p>
+      </section>
     </main>
     <footer>
       <p>&copy; Robin James Kerrison 2020</p>

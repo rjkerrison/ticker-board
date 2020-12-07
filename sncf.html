@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticker Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/ticker.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ticker Board: SNCF</h1>
+      <p>
+        On this page, there's an example of the
+        <a href="./index.html">Ticker Board</a> plugin which also connects to
+        the <a href="https://api.sncf.com">SNCF Developer API</a>. It shows
+        trains leaving Paris Montparnasse.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Departures Board</h2>
+        <div id="board"></div>
+        <p>Currently it's not showing the time of departure.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Robin James Kerrison 2020</p>
+    </footer>
+    <script src="src/ticker.js"></script>
+    <script src="src/index.js"></script>
+    <script src="sncf.js"></script>
+  </body>
+</html>
