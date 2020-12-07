@@ -1,18 +1,22 @@
 @import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&amp;family=Roboto+Mono:wght@100;400&amp;display=swap);
 
 ul.board {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: hidden;
   background-color: black;
   font-family: 'Nanum Gothic Coding', 'Roboto Mono', monospace;
-  display: flex;
-  list-style: none;
-  color: hsl(60, 50%, 65%);
   font-size: 3rem;
-  margin: 0;
-  padding: 0.25rem;
-  overflow-x: hidden;
+  color: hsl(60, 50%, 65%);
 }
 
-li.ticker span {
+li.ticker-row {
+  display: flex;
+  padding: 0.25rem;
+}
+
+span.ticker {
   display: block;
   background-image: url('./ticker-bg.svg');
   background-size: cover;
@@ -24,7 +28,7 @@ li.ticker span {
   box-shadow: 0 0 0.25rem 0 rgba(193, 193, 193, 0.5);
 }
 
-li.ticker span.animating {
+span.ticker.animating {
   animation: squeeze 0.075s ease-in-out infinite;
 }
 @keyframes squeeze {

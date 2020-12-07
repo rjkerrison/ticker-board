@@ -3,7 +3,7 @@ class TickerBoard {
     const selectedElements = document.querySelectorAll(selector)
     this.boards = Array.from(selectedElements).map((selected) => {
       const messages = Array.from(selected.children).map((m) => m.innerText)
-      const boardElement = document.createElement('div')
+      const boardElement = document.createElement('ul')
       selected.replaceWith(boardElement)
 
       const board = new RotationBoard(boardElement, {

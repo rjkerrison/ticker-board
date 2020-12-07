@@ -33,7 +33,7 @@ Array.prototype.padEnd = function (item, length) {
 
 // Ticker board effect
 class TickerCard {
-  acceptableCodes = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,'-\xa0`
+  acceptableCodes = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789:,'-\xa0`
   delayInMilliseconds = 25
 
   constructor(letter) {
@@ -42,11 +42,9 @@ class TickerCard {
   }
 
   createElement() {
-    this.element = document.createElement('li')
+    this.element = document.createElement('span')
     this.element.classList.add('ticker')
-    const span = document.createElement('span')
-    span.innerText = this.visibleLetter
-    this.element.appendChild(span)
+    this.element.innerText = this.visibleLetter
   }
 
   changeCharacter(letter) {
@@ -75,16 +73,16 @@ class TickerCard {
         window.requestAnimationFrame(updateLetter)
       } else {
         this.changeCharacter(letter)
-        this.element.firstElementChild.classList.remove('animating')
+        this.element.classList.remove('animating')
       }
     }
 
-    this.element.firstElementChild.classList.add('animating')
+    this.element.classList.add('animating')
     window.requestAnimationFrame(updateLetter)
   }
 
   render() {
-    this.element.firstElementChild.innerText = this.visibleLetter
+    this.element.innerText = this.visibleLetter
   }
 }
 
@@ -116,8 +114,9 @@ class TickerRow {
   }
 
   render() {
-    const element = document.createElement('ul')
-    element.classList.add('board')
+    const element = document.createElement('li')
+    //element.setAttribute('aria-hidden', 'true')
+    element.classList.add('ticker-row')
     this.cards.forEach((card) => {
       element.appendChild(card.element)
     })
@@ -127,7 +126,10 @@ class TickerRow {
 
 class Board {
   constructor(element, { count, size, delay }) {
-    this.element = element
+    const boardElement = document.createElement('ul')
+    boardElement.classList.add('board')
+    element.replaceWith(boardElement)
+    this.element = boardElement
     this.messages = new Array(count).fill(''.padEnd(size, NON_BREAKING_SPACE))
     this.createTickers(size)
     this.options = {
