@@ -7,8 +7,12 @@ ul.board {
   overflow-x: hidden;
   background-color: black;
   font-family: 'Nanum Gothic Coding', 'Roboto Mono', monospace;
-  font-size: 3rem;
   color: hsl(60, 50%, 65%);
+  /* static for old browsers */
+  font-size: 3rem;
+  /* scale for new browsers */
+  font-size: calc(3 * var(--base-size));
+  --base-size: min(1rem, 1.5vw);
 }
 
 .sr-only {
@@ -19,13 +23,13 @@ ul.board {
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
+  white-space: nowrap;
   border: 0;
 }
 
 ul.board li div.ticker-row {
   display: flex;
-  padding: 0.25rem;
+  padding: calc(var(--base-size) / 4);
 }
 
 span.ticker {
@@ -34,14 +38,18 @@ span.ticker {
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
-  border-radius: 0.125rem;
-  padding: 0.25rem 0.5rem;
   overflow-y: hidden;
   box-shadow: 0 0 0.25rem 0 rgba(193, 193, 193, 0.5);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  /* static for old browsers */
+  border-radius: 0.125rem;
+  padding: 0.25rem 0.5rem;
+  /* scale for modern browsers */
+  border-radius: calc(var(--base-size) / 8);
+  padding: calc(var(--base-size) / 4) calc(var(--base-size) / 2);
 }
 
 span.ticker.animating {
