@@ -43,11 +43,35 @@ const { TickerBoard } = require('ticker-board')
 
 ## Usage
 
-Once imported, the easiest way is
+Once imported, the easiest way is to create a list and
+let the default behaviour scroll the messages.
 
 ```html
-
+<ul class="create-ticker">
+    <li>Vanilla JS</li>
+    <li>CSS included</li>
+    <li>Auto rotating board</li>
+    <li>Manual update API</li>
+    <li>That's all so far</li>
+</ul>
 ```
+
+And then in your JavaScript,
+
+```js
+  new TickerBoard('.create-ticker')
+```
+
+For more complicated examples,
+there is a `board.updateMessages()` method.
+
+```js
+document.getElementById('my-board')
+const board = new Board(element)
+board.updateMessages(['Apple', 'Banana', 'Cherry'])
+```
+
+See [`./demo/`](./main/tree/demo) for more examples.
 
 ## Advantages
 
