@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticker Board</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="src/ticker.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <header>
@@ -39,11 +38,12 @@
       </section>
       <section>
         <h2>How-to Guide</h2>
-        <p>
-          Import the library JavaScript at
-          <a href="src/ticker.js">ticker.js</a> and
-          <a href="src/index.js">index.js</a> (minified package not yet ready).
-        </p>
+        <p>You can use this by either of the following methods</p>
+        <ul>
+          <li>cloning the repository and importing the libraries</li>
+          <li>using the node module</li>
+          <li>using the minified version</li>
+        </ul>
         <p>After importing the JS, the simplest way to get set up is with…</p>
         <pre><code lang="javascript">new TickerBoard('.my-ticker-board')</code></pre>
         <p>
@@ -64,7 +64,7 @@ board.updateMessages(['Apple', 'Banana', 'Cherry'])</code></pre>
           <code>updateMessages</code> method to do so.
         </p>
         <p>
-          Another example uses <a href="./sncf.html">SNCF Live Data</a> to
+          Another example uses <a href="./demo/sncf.html">SNCF Live Data</a> to
           update the board with train times.
         </p>
       </section>
@@ -72,8 +72,9 @@ board.updateMessages(['Apple', 'Banana', 'Cherry'])</code></pre>
     <footer>
       <p>&copy; Robin James Kerrison 2020</p>
     </footer>
-    <script src="src/ticker.js"></script>
-    <script src="src/index.js"></script>
-    <script src="main.js"></script>
+    <script src="./ticker-board/dist/ticker-board.js"></script>
+    <script>
+      new TickerBoard('.create-ticker')
+    </script>
   </body>
 </html>

@@ -1,5 +1,4 @@
 import { Board, TickerBoard, RotationBoard } from './boards/index.js'
-
 import css from './ticker.css'
 
 // for ease-of-use, we expose these classes in window

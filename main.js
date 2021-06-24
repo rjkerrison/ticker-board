@@ -1,1 +1,0 @@
-new TickerBoard('.create-ticker')
