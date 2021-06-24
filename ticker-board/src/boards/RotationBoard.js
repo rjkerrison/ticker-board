@@ -1,27 +1,4 @@
-class TickerBoard {
-  constructor(selector) {
-    const selectedElements = document.querySelectorAll(selector)
-    this.boards = Array.from(selectedElements).map((selected) => {
-      const messages = Array.from(selected.children).map((m) => m.innerText)
-      const boardElement = document.createElement('ul')
-      selected.replaceWith(boardElement)
-
-      const board = new RotationBoard(boardElement, {
-        count: messages.length,
-        size: 24,
-        messages,
-      })
-
-      boardElement.addEventListener('click', () => board.advance())
-
-      return board
-    })
-  }
-
-  advance(index) {
-    this.boards[index].advance()
-  }
-}
+import Board from './Board'
 
 class RotationBoard extends Board {
   constructor(element, options) {
@@ -59,7 +36,8 @@ class RotationBoard extends Board {
 
       newMessages.push(this.originalMessages[indexToAdd])
     }
-    console.log('advance', this.messages, this.originalMessages, newMessages)
     this.updateMessages(newMessages)
   }
 }
+
+export default RotationBoard

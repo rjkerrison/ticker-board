@@ -1,0 +1,3 @@
+const NON_BREAKING_SPACE = `\xa0`
+
+export { NON_BREAKING_SPACE }
