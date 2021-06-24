@@ -71,7 +71,7 @@ const board = new Board(element)
 board.updateMessages(['Apple', 'Banana', 'Cherry'])
 ```
 
-See [`./demo/`](./main/tree/demo) for more examples.
+See [`./demo/`](./demo) for more examples.
 
 ## Advantages
 
