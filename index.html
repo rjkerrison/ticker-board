@@ -9,13 +9,16 @@
   <body>
     <header>
       <h1>Ticker Board</h1>
-      <p>This will be the landing page for my ticker board plugin.</p>
+      <p>This is the landing page for the ticker board plugin.</p>
       <p class="create-ticker">
-        <span>A JS plugin</span> <span>for ticker boards</span>
+        <span>A JS plugin</span>
+        <span>for ticker boards</span>
       </p>
       <p>
         See the project on
-        <a href="https://github.com/rjkerrison/ticker-board">GitHub</a>.
+        <a href="https://github.com/rjkerrison/ticker-board">GitHub</a>. Find
+        the package on
+        <a href="https://www.npmjs.com/package/ticker-board">npmjs.com</a>.
       </p>
     </header>
     <main>
@@ -24,10 +27,10 @@
         <p>The features include:</p>
         <ul class="create-ticker">
           <li>Vanilla JS</li>
-          <li>CSS included</li>
+          <li>Styling included</li>
           <li>Auto rotating board</li>
-          <li>Manual update API</li>
-          <li>That's all so far</li>
+          <li>Manual update methods</li>
+          <li>Node package</li>
         </ul>
         <p>
           It's accessible for screen-readers, using a left-of-view element to
@@ -41,8 +44,13 @@
         <p>You can use this by either of the following methods</p>
         <ul>
           <li>cloning the repository and importing the libraries</li>
-          <li>using the node module</li>
-          <li>using the minified version</li>
+          <li>using the node module <code>ticker-board</code></li>
+          <li>
+            using the
+            <a href="./ticker-board/dist/ticker-board.min.js"
+              >minified version</a
+            >
+          </li>
         </ul>
         <p>After importing the JS, the simplest way to get set up is with…</p>
         <pre><code lang="javascript">new TickerBoard('.my-ticker-board')</code></pre>
@@ -64,8 +72,9 @@ board.updateMessages(['Apple', 'Banana', 'Cherry'])</code></pre>
           <code>updateMessages</code> method to do so.
         </p>
         <p>
-          Another example uses <a href="./demo/sncf.html">SNCF Live Data</a> to
-          update the board with train times.
+          Another example usage of <code>updateMessages</code> uses
+          <a href="./demo/sncf.html">SNCF Live Data</a> to update the board with
+          train times.
         </p>
       </section>
     </main>
