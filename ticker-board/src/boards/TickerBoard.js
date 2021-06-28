@@ -1,6 +1,6 @@
 class TickerBoard {
   constructor(selector, options) {
-    const { size } = options || {}
+    const { size, theme, delay } = options || {}
     const selectedElements = document.querySelectorAll(selector)
     this.boards = Array.from(selectedElements).map((selected) => {
       const messages = Array.from(selected.children).map((m) => m.innerText)
@@ -11,9 +11,11 @@ class TickerBoard {
         count: messages.length,
         size: size || Math.max(...messages.map((x) => x.length)),
         messages,
+        theme,
+        delay,
       })
 
-      boardElement.addEventListener('click', () => board.advance())
+      board.element.addEventListener('click', () => board.advance())
 
       return board
     })

@@ -13,7 +13,7 @@
     stroke="rgb(193, 193, 193)"
     stroke-width="3"
     rx="4"
-    fill="hsl(215, 15%, 5%)"
+    fill="rgb(246, 243, 224)"
   />
   <rect x="15" y="74" width="70" height="2" fill="rgb(128, 128, 128)" />
   <circle
@@ -21,15 +21,15 @@
     cy="75"
     r="4"
     fill="rgb(193, 193, 193)"
-    stroke="none"
-    stroke-width="2"
+    stroke="rgb(246, 243, 224)"
+    stroke-width="3"
   />
   <circle
     cx="90"
     cy="75"
     r="4"
     fill="rgb(193, 193, 193)"
-    stroke="none"
-    stroke-width="2"
+    stroke="rgb(246, 243, 224)"
+    stroke-width="3"
   />
 </svg>

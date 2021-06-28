@@ -3,13 +3,14 @@ import TickerRow from '../components/TickerRow'
 import { appendItemsUpToLength } from '../utils/array'
 
 class Board {
-  constructor(element, { count, size, delay }) {
+  constructor(element, { count, size, delay, theme }) {
+    this.options = {
+      delay: delay || 250,
+      theme,
+    }
     this.messages = new Array(count).fill(''.padEnd(size, NON_BREAKING_SPACE))
     this._createElement(element)
     this._createTickers(size)
-    this.options = {
-      delay: delay || 250,
-    }
     this.update()
   }
 
@@ -21,6 +22,11 @@ class Board {
     }
     if (element instanceof HTMLElement) {
       element.replaceWith(boardElement)
+    }
+    if (typeof this.options.theme === 'string') {
+      const { theme } = this.options
+      console.log({ theme, boardElement })
+      boardElement.setAttribute(theme, true)
     }
     this.element = boardElement
   }

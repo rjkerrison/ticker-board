@@ -4,15 +4,20 @@ ul.board {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow-x: hidden;
-  background-color: black;
   font-family: 'Nanum Gothic Coding', 'Roboto Mono', monospace;
-  color: hsl(60, 50%, 65%);
+  overflow-x: hidden;
   /* static for old browsers */
   font-size: 3rem;
   /* scale for new browsers */
   font-size: calc(3 * var(--base-size));
-  --base-size: min(1rem, 1.5vw);
+  max-width: min-content;
+  --base-size: min(1rem, 2.5vw);
+}
+
+@media screen and (max-width: 600px) {
+  ul.board {
+    overflow-x: scroll;
+  }
 }
 
 .sr-only {
@@ -34,19 +39,18 @@ ul.board li div.ticker-row {
 
 span.ticker {
   display: block;
-  background-image: url('./ticker-bg.svg');
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
   overflow-y: hidden;
-  box-shadow: 0 0 0.25rem 0 rgba(193, 193, 193, 0.5);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   /* static for old browsers */
   border-radius: 0.125rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0;
+  /* margin: 0 0.125rem; */
   /* scale for modern browsers */
   border-radius: calc(var(--base-size) / 8);
   padding: calc(var(--base-size) / 4) calc(var(--base-size) / 2);
@@ -58,5 +62,23 @@ span.ticker.animating {
 @keyframes squeeze {
   50% {
     transform: scaleY(0);
+  }
+}
+
+span.ticker,
+[dark] span.ticker {
+  color: hsl(60, 50%, 65%);
+  background-image: url('./ticker-bg.svg');
+}
+
+[light] span.ticker {
+  color: hsl(240, 25%, 15%);
+  background-image: url('./ticker-bg-light.svg');
+}
+
+@media (prefers-color-scheme: light) {
+  span.ticker {
+    color: hsl(240, 25%, 15%);
+    background-image: url('./ticker-bg-light.svg');
   }
 }
