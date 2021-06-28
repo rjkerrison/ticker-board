@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticker Board</title>
+    <script src="./ticker-board/dist/ticker-board.js"></script>
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
@@ -60,16 +61,31 @@
           automatically rotates through the inner text of that board. This is
           exactly how the <a href="#features">board showing features</a> works!
         </p>
+        <p>
+          You can override settings like size and colour scheme by providing
+          options.
+        </p>
+        <pre><code lang="javascript">new TickerBoard('.my-ticker-board',
+  {
+    theme: 'dark',
+    size: 24,
+  })</code
+></pre>
       </section>
+
       <section>
         <h2>Other Examples</h2>
+        <p>
+          For more complicated examples, the generic <code>Board</code> class
+          allows you to manually updateMessages with the
+          <code>updateMessages</code> method.
+        </p>
         <pre><code lang="javascript">document.getElementById('my-board')
 const board = new Board(element)
 board.updateMessages(['Apple', 'Banana', 'Cherry'])</code></pre>
         <p>
           This would just update the board with some fruit names, and then not
-          update again. If you want to update the board, use the
-          <code>updateMessages</code> method to do so.
+          update again.
         </p>
         <p>
           Another example usage of <code>updateMessages</code> uses
@@ -81,7 +97,6 @@ board.updateMessages(['Apple', 'Banana', 'Cherry'])</code></pre>
     <footer>
       <p>&copy; Robin James Kerrison 2020</p>
     </footer>
-    <script src="./ticker-board/dist/ticker-board.js"></script>
     <script>
       new TickerBoard('.create-ticker')
     </script>
