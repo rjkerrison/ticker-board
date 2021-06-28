@@ -25,17 +25,11 @@ class RotationBoard extends Board {
   advance() {
     const newMessages = Array.from(this.messages)
     newMessages.shift()
+    const lastMessage = this.messages[this.messages.length - 1]
+    const indexToAdd = this.originalMessages.indexOf(lastMessage) + 1
 
-    if (this.originalMessages.indexOf(this.messages[0]) > -1) {
-      newMessages.push(this.defaultMessage)
-    } else {
-      const indexToAdd =
-        this.originalMessages.indexOf(
-          this.messages[this.originalMessages.length - 1]
-        ) + 1
+    newMessages.push(this.originalMessages[indexToAdd])
 
-      newMessages.push(this.originalMessages[indexToAdd])
-    }
     this.updateMessages(newMessages)
   }
 }

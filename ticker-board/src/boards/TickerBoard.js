@@ -1,3 +1,5 @@
+import RotationBoard from './RotationBoard'
+
 class TickerBoard {
   constructor(selector, options) {
     const { size, theme, delay } = options || {}
