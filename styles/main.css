@@ -70,6 +70,13 @@ pre {
   transition: background-color 1s ease, background-image 1s ease, color 1s ease;
 }
 
+li h3 {
+  text-align: left;
+}
+li p {
+  text-align: left;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: rgb(246, 243, 224);

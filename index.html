@@ -41,18 +41,45 @@
         </p>
       </section>
       <section>
-        <h2>How-to Guide</h2>
+        <h2>Importing the Ticker Board plugin</h2>
         <p>You can use this by either of the following methods</p>
         <ul>
-          <li>cloning the repository and importing the libraries</li>
-          <li>using the node module <code>ticker-board</code></li>
           <li>
-            using the
-            <a href="./ticker-board/dist/ticker-board.min.js"
-              >minified version</a
-            >
+            <h3>node package manager</h3>
+            <p>
+              If you're using node package manager for your project, you can use
+              the node module <code>ticker-board</code>
+            </p>
+            <pre><code lang="sh"
+              >npm install --save ticker-board</code
+              ></pre>
+          </li>
+          <li>
+            <h3>minified package</h3>
+            <p>
+              using the
+              <a href="./ticker-board/dist/ticker-board.min.js"
+                >minified version</a
+              >, either downloading it locally or using it directly
+            </p>
+            <pre><code lang="javascript"
+>&lt;script src="{{baseUrl}}/ticker-board/dist/ticker-board.js"&gt;&lt;/script&gt;</code
+></pre>
+          </li>
+          <li>
+            <h3>Git repo</h3>
+            <p>
+              Clone this repository, take a look at the module files, or use the
+              ready-made distribution files.
+            </p>
+            <pre><code lang="en"
+>git clone https://github.com/rjkerrison/ticker-board.git
+cd ticker-board</code></pre>
           </li>
         </ul>
+      </section>
+      <section>
+        <h2>Using the Ticker Board plugin</h2>
         <p>After importing the JS, the simplest way to get set up is with…</p>
         <pre><code lang="javascript">new TickerBoard('.my-ticker-board')</code></pre>
         <p>
@@ -92,13 +119,19 @@ board.updateMessages(['Apple', 'Banana', 'Cherry'])</code></pre>
           <a href="./demo/sncf.html">SNCF Live Data</a> to update the board with
           train times.
         </p>
+        <p>
+          You can also seee how it's possible to create a
+          <a href="./demo/rotation.html">simple rotating board</a>
+          that moves through multiple messages in one or two rows.
+        </p>
       </section>
     </main>
     <footer>
-      <p>&copy; Robin James Kerrison 2020</p>
+      <p>&copy; Robin James Kerrison {{currentYear}}</p>
     </footer>
     <script>
       new TickerBoard('.create-ticker')
     </script>
+    <script src="./replacements.js"></script>
   </body>
 </html>

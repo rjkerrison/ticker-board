@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticker Board</title>
+    <script src="../ticker-board/dist/ticker-board.js"></script>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ticker Board: Rotation Board</h1>
+      <p>Sometimes you may have a few messages you want to loop through.</p>
+      <p>
+        For more, see the main
+        <a href="../index.html">Ticker Board</a>
+        page.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Rotation Board</h2>
+        <p>The boards below loop through the following messages:</p>
+        <ul id="messages">
+          <li>We have five messages</li>
+          <li>They loop through</li>
+          <li>We're using a plugin</li>
+          <li>The code is simple</li>
+          <li>We can do anything!</li>
+        </ul>
+        <h3>One row</h3>
+        <div id="board"></div>
+        <h3>Two rows</h3>
+        <div id="two-row-board"></div>
+      </section>
+      <section>
+        <h2>Example code</h2>
+        <p>
+          The following code creates a board which loops through four names.
+        </p>
+        <pre><code lang="javascript">new RotationBoard(document.getElementById('beatles'), {
+  messages: ['John', 'Paul', 'Ringo', 'George'],
+  count: 1,
+  size: 24,
+})</code></pre>
+        <p>You can see the result below.</p>
+        <div id="beatles"></div>
+        <script>
+          new RotationBoard(document.getElementById('beatles'), {
+            messages: ['John', 'Paul', 'Ringo', 'George'],
+            count: 1,
+            size: 24,
+          })
+        </script>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Robin James Kerrison {{currentYear}}</p>
+    </footer>
+    <script src="rotation.js"></script>
+    <script src="../replacements.js"></script>
+  </body>
+</html>
