@@ -1,5 +1,5 @@
 class TickerBoard {
-  constructor(selector) {
+  constructor(selector, { size }) {
     const selectedElements = document.querySelectorAll(selector)
     this.boards = Array.from(selectedElements).map((selected) => {
       const messages = Array.from(selected.children).map((m) => m.innerText)
@@ -8,7 +8,7 @@ class TickerBoard {
 
       const board = new RotationBoard(boardElement, {
         count: messages.length,
-        size: 24,
+        size: size || Math.max(...messages.map((x) => x.length)),
         messages,
       })
 
