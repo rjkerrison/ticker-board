@@ -1,5 +1,6 @@
 class TickerBoard {
-  constructor(selector, { size }) {
+  constructor(selector, options) {
+    const { size } = options || {}
     const selectedElements = document.querySelectorAll(selector)
     this.boards = Array.from(selectedElements).map((selected) => {
       const messages = Array.from(selected.children).map((m) => m.innerText)
