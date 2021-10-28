@@ -1,9 +1,9 @@
 import { sliceBetween } from '../utils/string'
 
-class TickerCard {
-  acceptableCodes = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789:,'-\xa0`
-  delayInMilliseconds = 25
+const acceptableCodes = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789:,'-\xa0`
+const delayInMilliseconds = 25
 
+class TickerCard {
   constructor(letter) {
     this.visibleLetter = letter
     this.createElement()
@@ -24,11 +24,7 @@ class TickerCard {
     if (this.visibleLetter === letter) {
       return
     }
-    const letters = sliceBetween(
-      this.acceptableCodes,
-      this.visibleLetter,
-      letter
-    )
+    const letters = sliceBetween(acceptableCodes, this.visibleLetter, letter)
 
     let start
     const updateLetter = (timestamp) => {
@@ -36,7 +32,7 @@ class TickerCard {
         start = timestamp
       }
       const elapsed = timestamp - start
-      const letterIndex = Math.floor(elapsed / this.delayInMilliseconds)
+      const letterIndex = Math.floor(elapsed / delayInMilliseconds)
 
       if (letterIndex < letters.length) {
         this.changeCharacter(letters[letterIndex])
