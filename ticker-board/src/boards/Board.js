@@ -8,9 +8,12 @@ class Board {
       delay: delay || 250,
       theme,
     }
-    this.messages = new Array(count).fill(''.padEnd(size, NON_BREAKING_SPACE))
+    this.size = size
+    this.messages = new Array(count).fill(
+      ''.padEnd(this.size, NON_BREAKING_SPACE)
+    )
     this._createElement(element)
-    this._createTickers(size)
+    this._createTickers()
     this.update()
   }
 
@@ -31,14 +34,27 @@ class Board {
     this.element = boardElement
   }
 
-  _createTickers(size) {
-    this.tickers = this.messages.map((_, i) => this.setupTicker(size, i))
+  _createTickers() {
+    this.tickers = this.messages.map((_, i) => this.setupTicker(i))
   }
 
-  setupTicker(size, i) {
+  updateCount(count) {
+    if (count === this.tickers.length) {
+      return
+    }
+    while (count > this.tickers.length) {
+      this.messages.push(''.padEnd(this.size, NON_BREAKING_SPACE))
+      this.tickers.push(this.setupTicker(this.tickers.length))
+    }
+    while (count < this.tickers.length) {
+      this.tickers.pop()
+    }
+  }
+
+  setupTicker(i) {
     const ticker = new TickerRow(
-      size,
-      this.messages[i].padEnd(size, NON_BREAKING_SPACE)
+      this.size,
+      this.messages[i].padEnd(this.size, NON_BREAKING_SPACE)
     )
     this.element.appendChild(ticker.element)
     return ticker
