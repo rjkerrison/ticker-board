@@ -7,8 +7,7 @@ const Header = () => {
         create
       </p>
       <p>
-        For more, see the main
-        <a href="../index.html">Ticker Board</a>
+        For more, see the main <a href="../../../index.html">Ticker Board</a>{' '}
         page.
       </p>
     </header>

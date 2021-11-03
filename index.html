@@ -21,10 +21,29 @@
         the package on
         <a href="https://www.npmjs.com/package/ticker-board">npmjs.com</a>.
       </p>
+      <nav>
+        <ul>
+          <li>
+            <a href="#features">Features</a>
+          </li>
+          <li>
+            <a href="#importing">Importing</a>
+          </li>
+          <li>
+            <a href="#using">Using</a>
+          </li>
+          <li>
+            <a href="#other-examples">Other Examples</a>
+          </li>
+          <li>
+            <a href="#react-ticker-board">React</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="features">
-        <h2>Included features</h2>
+        <h2><a href="#features">Included features</a></h2>
         <p>The features include:</p>
         <ul class="create-ticker">
           <li>Vanilla JS</li>
@@ -40,8 +59,8 @@
           disabled, however the screen-reader only text can be selected.
         </p>
       </section>
-      <section>
-        <h2>Importing the Ticker Board plugin</h2>
+      <section id="importing">
+        <h2><a href="#importing">Importing the Ticker Board plugin</a></h2>
         <p>You can use this by either of the following methods</p>
         <ul>
           <li>
@@ -78,8 +97,8 @@ cd ticker-board</code></pre>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Using the Ticker Board plugin</h2>
+      <section id="using">
+        <h2><a href="#using">Using the Ticker Board plugin</a></h2>
         <p>After importing the JS, the simplest way to get set up is with…</p>
         <pre><code lang="javascript">new TickerBoard('.my-ticker-board')</code></pre>
         <p>
@@ -99,9 +118,8 @@ cd ticker-board</code></pre>
   })</code
 ></pre>
       </section>
-
-      <section>
-        <h2>Other Examples</h2>
+      <section id="other-examples">
+        <h2><a href="#other-examples">Other Examples</a></h2>
         <p>
           For more complicated examples, the generic <code>Board</code> class
           allows you to manually updateMessages with the
@@ -123,6 +141,23 @@ board.updateMessages(['Apple', 'Banana', 'Cherry'])</code></pre>
           You can also seee how it's possible to create a
           <a href="./demo/rotation.html">simple rotating board</a>
           that moves through multiple messages in one or two rows.
+        </p>
+      </section>
+      <section id="react-ticker-board">
+        <h2><a href="#react-ticker-board">React Ticker Board</a></h2>
+        <p>
+          Using react? There's an
+          <a href="https://www.npmjs.com/package/react-ticker-board"
+            >react-ticker-board package</a
+          >. Install it with yarn,
+        </p>
+        <pre><code>yarn add react-ticker-board</code></pre>
+        <p>or if you're using npm,</p>
+        <pre><code>npm install react-ticker-board</code></pre>
+        <p>
+          Take a look at the
+          <a href="./demo/react/build/">react ticker board demo</a> to get
+          started.
         </p>
       </section>
     </main>

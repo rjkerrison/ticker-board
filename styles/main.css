@@ -77,6 +77,56 @@ li p {
   text-align: left;
 }
 
+input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  height: 4rem;
+  border-width: 0 0 0.25rem 0;
+  border-style: solid;
+}
+
+input[type='text'] {
+  background-color: transparent;
+  color: rgb(245, 240, 209);
+  border-color: rgb(70, 57, 155);
+  box-shadow: 0 0.25rem 0.25rem -0.125rem rgba(17, 17, 10, 0.5);
+}
+
+input[type='button'],
+input[type='submit'] {
+  border-color: transparent;
+  background-color: rgb(70, 57, 155);
+  color: rgb(245, 240, 209);
+  box-shadow: 0 0.25rem 0.25rem -0.125rem rgba(17, 17, 10, 0.5);
+}
+
+input[type='button']:disabled {
+  background-color: rgb(79, 79, 72);
+}
+
+h2 a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+h2 a:visited {
+  color: inherit;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+h2 a:hover::before {
+  content: '#';
+  display: inline-block;
+  position: absolute;
+  left: -1em;
+  top: 0.2em;
+  font-size: 0.75em;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: rgb(246, 243, 224);
@@ -97,5 +147,15 @@ li p {
 
   pre {
     background: white;
+  }
+
+  input[type='text'] {
+    color: rgb(53, 52, 44);
+    border-color: rgb(156, 81, 135);
+  }
+
+  input[type='button'],
+  input[type='submit'] {
+    background-color: rgb(156, 81, 135);
   }
 }
