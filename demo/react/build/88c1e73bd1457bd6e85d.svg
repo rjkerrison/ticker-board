@@ -1,0 +1,35 @@
+<svg
+  viewBox="0 0 100 150"
+  width="10px"
+  height="20px"
+  xmlns="http://www.w3.org/2000/svg"
+  id="ticker-background"
+>
+  <rect
+    x="10"
+    y="6"
+    width="80"
+    height="138"
+    stroke="rgb(193, 193, 193)"
+    stroke-width="3"
+    rx="4"
+    fill="rgb(246, 243, 224)"
+  />
+  <rect x="15" y="74" width="70" height="2" fill="rgb(128, 128, 128)" />
+  <circle
+    cx="10"
+    cy="75"
+    r="4"
+    fill="rgb(193, 193, 193)"
+    stroke="rgb(246, 243, 224)"
+    stroke-width="3"
+  />
+  <circle
+    cx="90"
+    cy="75"
+    r="4"
+    fill="rgb(193, 193, 193)"
+    stroke="rgb(246, 243, 224)"
+    stroke-width="3"
+  />
+</svg>

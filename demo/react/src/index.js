@@ -1,5 +1,7 @@
 import { render } from 'react-dom'
 
-import HelloWorld from './HelloWorld'
+import Layout from './Layout'
 
-render(<HelloWorld />, document.getElementById('root'))
+import '../../../styles/main.css'
+
+render(<Layout />, document.getElementById('root'))
