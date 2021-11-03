@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TickerBoard renders: TickerBoard renders 1`] = `
+<body>
+  <div>
+    <div
+      id="ticker"
+    >
+      <div
+        id="ticker-child"
+      >
+        <div />
+        <span
+          data-testid="instance-id"
+        >
+          1
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;

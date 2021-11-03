@@ -28,7 +28,6 @@ class Board {
     }
     if (typeof this.options.theme === 'string') {
       const { theme } = this.options
-      console.log({ theme, boardElement })
       boardElement.setAttribute(theme, true)
     }
     this.element = boardElement
