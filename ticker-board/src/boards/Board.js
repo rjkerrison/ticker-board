@@ -1,6 +1,7 @@
 import { NON_BREAKING_SPACE } from '../utils/constants'
 import TickerRow from '../components/TickerRow'
 import { appendItemsUpToLength } from '../utils/array'
+import { padNonBreakingSpace } from '../utils/string'
 
 class Board {
   constructor(element, { count, size, delay, theme }) {
@@ -61,10 +62,7 @@ class Board {
 
   update() {
     this.tickers.forEach((ticker, i) => {
-      this.messages[i] = (this.messages[i] || '').padEnd(
-        this.size,
-        NON_BREAKING_SPACE
-      )
+      this.messages[i] = padNonBreakingSpace(this.messages[i], this.size)
       setTimeout(
         () => ticker.updateMessage(this.messages[i]),
         i * this.options.delay

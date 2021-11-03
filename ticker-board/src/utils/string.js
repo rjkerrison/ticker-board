@@ -1,3 +1,5 @@
+import { NON_BREAKING_SPACE } from './constants'
+
 const sliceAt = function (str, character) {
   return str.slice(str.indexOf(character) + 1)
 }
@@ -11,4 +13,7 @@ const sliceBetween = function (str, from, to) {
   return slicedBetween
 }
 
-export { sliceBetween }
+const padNonBreakingSpace = (message, size) =>
+  (message || '').padEnd(size, NON_BREAKING_SPACE)
+
+export { sliceBetween, padNonBreakingSpace }
