@@ -1,8 +1,8 @@
 {
   "name": "react-ticker-board",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A React ready ticker board",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "author": "Robin James Kerrison",
   "license": "MIT",
   "dependencies": {
