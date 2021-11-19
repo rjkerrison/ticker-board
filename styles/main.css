@@ -54,7 +54,7 @@ pre {
 
 section {
   background: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 1rem 0;
   max-width: 100%;
 }
@@ -157,5 +157,11 @@ h2 a:hover::before {
   input[type='button'],
   input[type='submit'] {
     background-color: rgb(156, 81, 135);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    padding: 1rem;
   }
 }
