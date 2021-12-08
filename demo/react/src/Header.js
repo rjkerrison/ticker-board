@@ -4,7 +4,7 @@ const Header = () => {
       <h1>Ticker Board: React</h1>
       <p>
         The <code>react-ticker-board</code> npm package provides an easy way to
-        create
+        create Solari style split-flap board effects in React.
       </p>
       <p>
         For more, see the main <a href="../../../index.html">Ticker Board</a>{' '}

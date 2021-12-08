@@ -26,7 +26,7 @@ const Layout = () => {
       <Router>
         <Routes>
           <Route path="/sncf" element={<Sncf />} />
-          <Route element={<Main />} />
+          <Route path="*" element={<Main />} />
         </Routes>
       </Router>
 
