@@ -1,0 +1,2913 @@
+{
+  "pagination": {
+    "start_page": 0,
+    "items_on_page": 12,
+    "items_per_page": 12,
+    "total_result": 12
+  },
+  "links": [
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_points/{stop_point.id}",
+      "type": "stop_point",
+      "rel": "stop_points",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_modes.id}",
+      "type": "commercial_modes",
+      "rel": "commercial_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+      "type": "physical_modes",
+      "rel": "physical_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/disruptions/{disruptions.id}",
+      "type": "disruptions",
+      "rel": "disruptions",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/routes/{route.id}",
+      "type": "route",
+      "rel": "routes",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_mode.id}",
+      "type": "physical_mode",
+      "rel": "physical_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+      "type": "commercial_mode",
+      "rel": "commercial_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/disruptions/{disruption.id}",
+      "type": "disruption",
+      "rel": "disruptions",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/vehicle_journeys/{vehicle_journey.id}",
+      "type": "vehicle_journey",
+      "rel": "vehicle_journeys",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+      "type": "line",
+      "rel": "lines",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/trips/{trip.id}",
+      "type": "trip",
+      "rel": "trips",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/networks/{network.id}",
+      "type": "network",
+      "rel": "networks",
+      "templated": true
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:SNCF:87686006/departures?count=12&forbidden_uris%5B%5D=network%3ASNCF%3ATNRER&forbidden_uris%5B%5D=network%3ASNCF%3ATN",
+      "type": "first",
+      "templated": false
+    }
+  ],
+  "disruptions": [
+    {
+      "status": "future",
+      "disruption_id": "0a0040ef-f8eb-4f01-aa91-cfdf3cf015cf",
+      "severity": {
+        "color": "#000000",
+        "priority": 42,
+        "name": "additional service",
+        "effect": "ADDITIONAL_SERVICE"
+      },
+      "impact_id": "0a0040ef-f8eb-4f01-aa91-cfdf3cf015cf",
+      "application_periods": [
+        { "begin": "20210811T050950", "end": "20210811T070200" }
+      ],
+      "updated_at": "20210810T153129",
+      "uri": "0a0040ef-f8eb-4f01-aa91-cfdf3cf015cf",
+      "impacted_objects": [
+        {
+          "impacted_stops": [
+            {
+              "amended_arrival_time": "050950",
+              "stop_point": {
+                "name": "Creil",
+                "links": [],
+                "coord": { "lat": "49.2638", "lon": "2.469199" },
+                "label": "Creil (Creil)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276006:Coach"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "050950",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "051620",
+              "stop_point": {
+                "name": "Chantilly - Gouvieux",
+                "links": [],
+                "coord": { "lat": "49.18724", "lon": "2.45979" },
+                "label": "Chantilly - Gouvieux (Chantilly)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276113:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "051720",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "052150",
+              "stop_point": {
+                "name": "Orry-la-Ville - Coye",
+                "links": [],
+                "coord": { "lat": "49.13895", "lon": "2.49" },
+                "label": "Orry-la-Ville - Coye (Orry-la-Ville)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276279:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "052250",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "052520",
+              "stop_point": {
+                "name": "La Borne Blanche",
+                "links": [],
+                "coord": { "lat": "49.126985", "lon": "2.505866" },
+                "label": "La Borne Blanche (Orry-la-Ville)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276287:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "052600",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "052910",
+              "stop_point": {
+                "name": "Survilliers - Fosses",
+                "links": [],
+                "coord": { "lat": "49.099604", "lon": "2.525402" },
+                "label": "Survilliers - Fosses (Fosses)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276261:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "052950",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "053410",
+              "stop_point": {
+                "name": "Louvres",
+                "links": [],
+                "coord": { "lat": "49.049657", "lon": "2.501897" },
+                "label": "Louvres (Louvres)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276253:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "053450",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "053720",
+              "stop_point": {
+                "name": "Les Noues",
+                "links": [],
+                "coord": { "lat": "49.03234", "lon": "2.47633" },
+                "label": "Les Noues (Goussainville)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276238:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "053800",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "054000",
+              "stop_point": {
+                "name": "Goussainville",
+                "links": [],
+                "coord": { "lat": "49.024088", "lon": "2.46325" },
+                "label": "Goussainville (Goussainville)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276246:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "054100",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "054430",
+              "stop_point": {
+                "name": "Villiers-le-Bel - Gonesse",
+                "links": [],
+                "coord": { "lat": "48.994205", "lon": "2.416129" },
+                "label": "Villiers-le-Bel - Gonesse (Arnouville)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276220:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "054530",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "054800",
+              "stop_point": {
+                "name": "Garges - Sarcelles",
+                "links": [],
+                "coord": { "lat": "48.97663", "lon": "2.39078" },
+                "label": "Garges - Sarcelles (Garges-l\u00e8s-Gonesse)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87276196:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "054900",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "055120",
+              "stop_point": {
+                "name": "Pierrefitte - Stains",
+                "links": [],
+                "coord": { "lat": "48.964126", "lon": "2.372164" },
+                "label": "Pierrefitte - Stains (Pierrefitte-sur-Seine)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87271163:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "055220",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "055540",
+              "stop_point": {
+                "name": "Saint-Denis",
+                "links": [],
+                "coord": { "lat": "48.935493", "lon": "2.345952" },
+                "label": "Saint-Denis (Saint-Denis)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87271015:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "055640",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "055900",
+              "stop_point": {
+                "name": "Stade de France Saint-Denis",
+                "links": [],
+                "coord": { "lat": "48.91779", "lon": "2.35134" },
+                "label": "Stade de France Saint-Denis (Saint-Denis)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87164780:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "060000",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "060500",
+              "stop_point": {
+                "name": "Paris Gare du Nord",
+                "links": [],
+                "coord": { "lat": "48.880136", "lon": "2.354851" },
+                "label": "Paris Gare du Nord (Paris)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87271007:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "060630",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "060930",
+              "stop_point": {
+                "name": "Ch\u00e2telet-les-Halles",
+                "links": [],
+                "coord": { "lat": "48.85983", "lon": "2.34814" },
+                "label": "Ch\u00e2telet-les-Halles (Paris)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87758607:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "061050",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "061500",
+              "stop_point": {
+                "name": "Paris Gare de Lyon Hall 1 &2",
+                "links": [],
+                "coord": { "lat": "48.844945", "lon": "2.373481" },
+                "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87686006:LongDistanceTrain"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "061600",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "062200",
+              "stop_point": {
+                "name": "Maisons-Alfort - Alfortville",
+                "links": [],
+                "coord": { "lat": "48.802071", "lon": "2.426977" },
+                "label": "Maisons-Alfort - Alfortville (Maisons-Alfort)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681155:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "062300",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "062500",
+              "stop_point": {
+                "name": "Le Vert de Maisons",
+                "links": [],
+                "coord": { "lat": "48.78934", "lon": "2.43148" },
+                "label": "Le Vert de Maisons (Alfortville)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681247:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "062550",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "062820",
+              "stop_point": {
+                "name": "Cr\u00e9teil Pompadour",
+                "links": [],
+                "coord": { "lat": "48.77154", "lon": "2.435276" },
+                "label": "Cr\u00e9teil Pompadour (Cr\u00e9teil)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87608802:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "062910",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "063220",
+              "stop_point": {
+                "name": "Villeneuve-Triage",
+                "links": [],
+                "coord": { "lat": "48.745198", "lon": "2.438192" },
+                "label": "Villeneuve-Triage (Villeneuve-Saint-Georges)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681809:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "063300",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "063510",
+              "stop_point": {
+                "name": "Villeneuve-Saint-Georges",
+                "links": [],
+                "coord": { "lat": "48.729972", "lon": "2.446523" },
+                "label": "Villeneuve-Saint-Georges (Villeneuve-Saint-Georges)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681825:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "063610",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "063930",
+              "stop_point": {
+                "name": "Vigneux-sur-Seine",
+                "links": [],
+                "coord": { "lat": "48.708214", "lon": "2.414398" },
+                "label": "Vigneux-sur-Seine (Vigneux-sur-Seine)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681304:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "064030",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "064340",
+              "stop_point": {
+                "name": "Juvisy",
+                "links": [],
+                "coord": { "lat": "48.68917", "lon": "2.38267" },
+                "label": "Juvisy (Juvisy-sur-Orge)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87545244:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "064440",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "064840",
+              "stop_point": {
+                "name": "Grigny-Centre",
+                "links": [],
+                "coord": { "lat": "48.653446", "lon": "2.395749" },
+                "label": "Grigny-Centre (Grigny)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681379:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "064930",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "065220",
+              "stop_point": {
+                "name": "Orangis-Bois-de-l'Epine",
+                "links": [],
+                "coord": { "lat": "48.636315", "lon": "2.407765" },
+                "label": "Orangis-Bois-de-l'Epine (Ris-Orangis)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681346:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "065300",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "065520",
+              "stop_point": {
+                "name": "\u00c9vry - Courcouronnes",
+                "links": [],
+                "coord": { "lat": "48.625507", "lon": "2.428581" },
+                "label": "\u00c9vry - Courcouronnes (\u00c9vry-Courcouronnes)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681387:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "065610",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "065810",
+              "stop_point": {
+                "name": "Le Bras de Fer - \u00c9vry - G\u00e9nopole",
+                "links": [],
+                "coord": { "lat": "48.623287", "lon": "2.450625" },
+                "label": "Le Bras de Fer - \u00c9vry - G\u00e9nopole (\u00c9vry-Courcouronnes)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681395:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "065850",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "070200",
+              "stop_point": {
+                "name": "Corbeil-Essonnes",
+                "links": [],
+                "coord": { "lat": "48.614405", "lon": "2.47376" },
+                "label": "Corbeil-Essonnes (Corbeil-Essonnes)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681007:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "070200",
+              "cause": "",
+              "arrival_status": "added"
+            }
+          ],
+          "pt_object": {
+            "embedded_type": "trip",
+            "id": "PIV:REALTIME:2021-08-11:155802-155803:1187:rail:suburbanRailway:FERRE",
+            "quality": 0,
+            "name": "PIV:REALTIME:2021-08-11:155802-155803:1187:rail:suburbanRailway:FERRE",
+            "trip": {
+              "id": "PIV:REALTIME:2021-08-11:155802-155803:1187:rail:suburbanRailway:FERRE",
+              "name": "155802-155803"
+            }
+          }
+        }
+      ],
+      "disruption_uri": "0a0040ef-f8eb-4f01-aa91-cfdf3cf015cf",
+      "contributor": "realtime.sncf.piv",
+      "cause": "",
+      "id": "0a0040ef-f8eb-4f01-aa91-cfdf3cf015cf"
+    },
+    {
+      "status": "future",
+      "disruption_id": "3c15b478-c235-4de8-84df-6c85fcadb878",
+      "severity": {
+        "color": "#000000",
+        "priority": 42,
+        "name": "additional service",
+        "effect": "ADDITIONAL_SERVICE"
+      },
+      "impact_id": "3c15b478-c235-4de8-84df-6c85fcadb878",
+      "application_periods": [
+        { "begin": "20210811T044030", "end": "20210811T054250" }
+      ],
+      "updated_at": "20210810T153129",
+      "uri": "3c15b478-c235-4de8-84df-6c85fcadb878",
+      "impacted_objects": [
+        {
+          "impacted_stops": [
+            {
+              "amended_arrival_time": "044030",
+              "stop_point": {
+                "name": "Corbeil-Essonnes",
+                "links": [],
+                "coord": { "lat": "48.614405", "lon": "2.47376" },
+                "label": "Corbeil-Essonnes (Corbeil-Essonnes)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681007:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "044030",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "044330",
+              "stop_point": {
+                "name": "Le Bras de Fer - \u00c9vry - G\u00e9nopole",
+                "links": [],
+                "coord": { "lat": "48.623287", "lon": "2.450625" },
+                "label": "Le Bras de Fer - \u00c9vry - G\u00e9nopole (\u00c9vry-Courcouronnes)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681395:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "044410",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "044610",
+              "stop_point": {
+                "name": "\u00c9vry - Courcouronnes",
+                "links": [],
+                "coord": { "lat": "48.625507", "lon": "2.428581" },
+                "label": "\u00c9vry - Courcouronnes (\u00c9vry-Courcouronnes)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681387:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "044700",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "044930",
+              "stop_point": {
+                "name": "Orangis-Bois-de-l'Epine",
+                "links": [],
+                "coord": { "lat": "48.636315", "lon": "2.407765" },
+                "label": "Orangis-Bois-de-l'Epine (Ris-Orangis)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681346:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "045010",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "045250",
+              "stop_point": {
+                "name": "Grigny-Centre",
+                "links": [],
+                "coord": { "lat": "48.653446", "lon": "2.395749" },
+                "label": "Grigny-Centre (Grigny)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681379:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "045340",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "045620",
+              "stop_point": {
+                "name": "Viry-Ch\u00e2tillon",
+                "links": [],
+                "coord": { "lat": "48.676128", "lon": "2.386407" },
+                "label": "Viry-Ch\u00e2tillon (Viry-Ch\u00e2tillon)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681312:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "045700",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "045900",
+              "stop_point": {
+                "name": "Juvisy",
+                "links": [],
+                "coord": { "lat": "48.68917", "lon": "2.38267" },
+                "label": "Juvisy (Juvisy-sur-Orge)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87545244:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "050000",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "050300",
+              "stop_point": {
+                "name": "Vigneux-sur-Seine",
+                "links": [],
+                "coord": { "lat": "48.708214", "lon": "2.414398" },
+                "label": "Vigneux-sur-Seine (Vigneux-sur-Seine)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681304:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "050400",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "050810",
+              "stop_point": {
+                "name": "Villeneuve-Saint-Georges",
+                "links": [],
+                "coord": { "lat": "48.729972", "lon": "2.446523" },
+                "label": "Villeneuve-Saint-Georges (Villeneuve-Saint-Georges)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681825:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "050910",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "051120",
+              "stop_point": {
+                "name": "Villeneuve-Triage",
+                "links": [],
+                "coord": { "lat": "48.745198", "lon": "2.438192" },
+                "label": "Villeneuve-Triage (Villeneuve-Saint-Georges)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681809:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "051200",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "051500",
+              "stop_point": {
+                "name": "Cr\u00e9teil Pompadour",
+                "links": [],
+                "coord": { "lat": "48.77154", "lon": "2.435276" },
+                "label": "Cr\u00e9teil Pompadour (Cr\u00e9teil)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87608802:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "051540",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "051800",
+              "stop_point": {
+                "name": "Le Vert de Maisons",
+                "links": [],
+                "coord": { "lat": "48.78934", "lon": "2.43148" },
+                "label": "Le Vert de Maisons (Alfortville)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681247:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "051850",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "052050",
+              "stop_point": {
+                "name": "Maisons-Alfort - Alfortville",
+                "links": [],
+                "coord": { "lat": "48.802071", "lon": "2.426977" },
+                "label": "Maisons-Alfort - Alfortville (Maisons-Alfort)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87681155:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "052140",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "052730",
+              "stop_point": {
+                "name": "Paris Gare de Lyon Hall 1 &2",
+                "links": [],
+                "coord": { "lat": "48.844945", "lon": "2.373481" },
+                "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87686006:LongDistanceTrain"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "052830",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "053230",
+              "stop_point": {
+                "name": "Ch\u00e2telet-les-Halles",
+                "links": [],
+                "coord": { "lat": "48.85983", "lon": "2.34814" },
+                "label": "Ch\u00e2telet-les-Halles (Paris)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87758607:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "053330",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "053630",
+              "stop_point": {
+                "name": "Paris Gare du Nord",
+                "links": [],
+                "coord": { "lat": "48.880136", "lon": "2.354851" },
+                "label": "Paris Gare du Nord (Paris)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87271007:Bus"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "053800",
+              "cause": "",
+              "arrival_status": "added"
+            },
+            {
+              "amended_arrival_time": "054250",
+              "stop_point": {
+                "name": "Stade de France Saint-Denis",
+                "links": [],
+                "coord": { "lat": "48.91779", "lon": "2.35134" },
+                "label": "Stade de France Saint-Denis (Saint-Denis)",
+                "equipments": [],
+                "id": "stop_point:SNCF:87164780:RapidTransit"
+              },
+              "stop_time_effect": "added",
+              "departure_status": "added",
+              "is_detour": false,
+              "amended_departure_time": "054250",
+              "cause": "",
+              "arrival_status": "added"
+            }
+          ],
+          "pt_object": {
+            "embedded_type": "trip",
+            "id": "PIV:REALTIME:2021-08-11:122500-122501:1187:rail:suburbanRailway:FERRE",
+            "quality": 0,
+            "name": "PIV:REALTIME:2021-08-11:122500-122501:1187:rail:suburbanRailway:FERRE",
+            "trip": {
+              "id": "PIV:REALTIME:2021-08-11:122500-122501:1187:rail:suburbanRailway:FERRE",
+              "name": "122500-122501"
+            }
+          }
+        }
+      ],
+      "disruption_uri": "3c15b478-c235-4de8-84df-6c85fcadb878",
+      "contributor": "realtime.sncf.piv",
+      "cause": "",
+      "id": "3c15b478-c235-4de8-84df-6c85fcadb878"
+    }
+  ],
+  "notes": [],
+  "feed_publishers": [
+    {
+      "url": "",
+      "id": "sncf",
+      "license": "Private (unspecified)",
+      "name": "SNCF PIV Production"
+    },
+    {
+      "url": "",
+      "id": "SNCF:sncf-piv",
+      "license": "Private (unspecified)",
+      "name": "SNCF PIV Production"
+    }
+  ],
+  "departures": [
+    {
+      "display_informations": {
+        "direction": "Toulon (Toulon)",
+        "code": "",
+        "network": "TGV INOUI",
+        "links": [],
+        "color": "",
+        "name": "Paris Gare de Lyon Hall 1 &2 - Hy\u00e8res",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "6129",
+        "label": "Paris Gare de Lyon Hall 1 &2 - Hy\u00e8res",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "6129",
+        "commercial_mode": "TGV INOUI",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "secondary_id", "value": "SNCF:87686030" },
+              { "type": "secondary_id", "value": "SNCF:87758581" },
+              { "type": "source", "value": "87686006" },
+              { "type": "source", "value": "87686030" },
+              { "type": "source", "value": "87758581" },
+              { "type": "uic", "value": "87686006" },
+              { "type": "uic", "value": "87686030" },
+              { "type": "uic", "value": "87758581" }
+            ],
+            "name": "Paris Gare de Lyon Hall 1 &2",
+            "links": [],
+            "coord": { "lat": "48.844945", "lon": "2.373481" },
+            "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87686006"
+          },
+          "quality": 0,
+          "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "id": "stop_area:SNCF:87686006"
+        },
+        "name": "Paris Gare de Lyon Hall 1 &2 - Hy\u00e8res",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Paris Gare de Lyon Hall 1 &2 - Hy\u00e8res",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "closing_time": "010000",
+          "opening_time": "052100",
+          "commercial_mode": {
+            "id": "commercial_mode:OUI",
+            "name": "TGV INOUI"
+          },
+          "id": "line:SNCF:CSR:631200"
+        },
+        "id": "route:SNCF:CSR:631200"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:631200" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-10:6129:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:631200" },
+        { "type": "commercial_mode", "id": "commercial_mode:OUI" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:OUI" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210810T193600",
+        "additional_informations": [],
+        "departure_date_time": "20210810T193600",
+        "base_arrival_date_time": "20210810T193600",
+        "base_departure_date_time": "20210810T193600",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Grenoble (Grenoble)",
+        "code": "",
+        "network": "TGV",
+        "links": [],
+        "color": "",
+        "name": "Paris Gare de Lyon Hall 1 &2 - Grenoble",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "6927",
+        "label": "Paris Gare de Lyon Hall 1 &2 - Grenoble",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "6927",
+        "commercial_mode": "TGV",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "source", "value": "87747006" },
+              { "type": "uic", "value": "87747006" }
+            ],
+            "name": "Grenoble",
+            "links": [],
+            "coord": { "lat": "45.191491", "lon": "5.714548" },
+            "label": "Grenoble (Grenoble)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87747006"
+          },
+          "quality": 0,
+          "name": "Grenoble (Grenoble)",
+          "id": "stop_area:SNCF:87747006"
+        },
+        "name": "Paris Gare de Lyon Hall 1 &2 - Grenoble",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Paris Gare de Lyon Hall 1 &2 - Grenoble",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "closing_time": "002200",
+          "opening_time": "061700",
+          "commercial_mode": { "id": "commercial_mode:TGV", "name": "TGV" },
+          "id": "line:SNCF:CSR:621100"
+        },
+        "id": "route:SNCF:CSR:621100"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:621100" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-10:6927:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:621100" },
+        { "type": "commercial_mode", "id": "commercial_mode:TGV" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:TGV" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210810T194100",
+        "additional_informations": [],
+        "departure_date_time": "20210810T194100",
+        "base_arrival_date_time": "20210810T194100",
+        "base_departure_date_time": "20210810T194100",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Laroche - Migennes (Migennes)",
+        "code": "",
+        "network": "TER",
+        "links": [],
+        "color": "",
+        "name": "Paris Gdl - Laroche",
+        "physical_mode": "TER / Intercit\u00e9s",
+        "headsign": "P35",
+        "label": "Paris Gdl - Laroche",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "891029",
+        "commercial_mode": "TER",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [{ "id": "commercial_mode:TER", "name": "TER" }],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          { "id": "physical_mode:Train", "name": "TER / Intercit\u00e9s" }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:Train",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "source", "value": "87683268" },
+              { "type": "uic", "value": "87683268" }
+            ],
+            "name": "Laroche - Migennes",
+            "links": [],
+            "coord": { "lat": "47.960998", "lon": "3.513191" },
+            "label": "Laroche - Migennes (Migennes)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87683268"
+          },
+          "quality": 0,
+          "name": "Laroche - Migennes (Migennes)",
+          "id": "stop_area:SNCF:87683268"
+        },
+        "name": "Paris Gdl - Laroche",
+        "links": [],
+        "physical_modes": [
+          { "id": "physical_mode:Train", "name": "TER / Intercit\u00e9s" }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Paris Gdl - Laroche",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            { "id": "physical_mode:Train", "name": "TER / Intercit\u00e9s" }
+          ],
+          "codes": [],
+          "closing_time": "010630",
+          "opening_time": "040800",
+          "commercial_mode": { "id": "commercial_mode:TER", "name": "TER" },
+          "id": "line:SNCF:FR:Line::BE3E2DD5-0143-472B-9CE8-1601556F7950:"
+        },
+        "id": "route:SNCF:FR:Line::BE3E2DD5-0143-472B-9CE8-1601556F7950:"
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:SNCF:FR:Line::BE3E2DD5-0143-472B-9CE8-1601556F7950:"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-10:891029:1187:Train"
+        },
+        {
+          "type": "route",
+          "id": "route:SNCF:FR:Line::BE3E2DD5-0143-472B-9CE8-1601556F7950:"
+        },
+        { "type": "commercial_mode", "id": "commercial_mode:TER" },
+        { "type": "physical_mode", "id": "physical_mode:Train" },
+        { "type": "network", "id": "network:SNCF:TER" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210810T194600",
+        "additional_informations": [],
+        "departure_date_time": "20210810T194600",
+        "base_arrival_date_time": "20210810T194600",
+        "base_departure_date_time": "20210810T194600",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Lyon Perrache (Lyon)",
+        "code": "",
+        "network": "TGV INOUI",
+        "links": [],
+        "color": "",
+        "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "6631",
+        "label": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "6631",
+        "commercial_mode": "TGV INOUI",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "secondary_id", "value": "SNCF:87686030" },
+              { "type": "secondary_id", "value": "SNCF:87758581" },
+              { "type": "source", "value": "87686006" },
+              { "type": "source", "value": "87686030" },
+              { "type": "source", "value": "87758581" },
+              { "type": "uic", "value": "87686006" },
+              { "type": "uic", "value": "87686030" },
+              { "type": "uic", "value": "87758581" }
+            ],
+            "name": "Paris Gare de Lyon Hall 1 &2",
+            "links": [],
+            "coord": { "lat": "48.844945", "lon": "2.373481" },
+            "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87686006"
+          },
+          "quality": 0,
+          "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "id": "stop_area:SNCF:87686006"
+        },
+        "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "closing_time": "001530",
+          "opening_time": "054900",
+          "commercial_mode": {
+            "id": "commercial_mode:OUI",
+            "name": "TGV INOUI"
+          },
+          "id": "line:SNCF:CSR:601100"
+        },
+        "id": "route:SNCF:CSR:601100"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:601100" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-10:6631:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:601100" },
+        { "type": "commercial_mode", "id": "commercial_mode:OUI" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:OUI" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210810T195700",
+        "additional_informations": [],
+        "departure_date_time": "20210810T195700",
+        "base_arrival_date_time": "20210810T195700",
+        "base_departure_date_time": "20210810T195700",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Marseille Saint-Charles (Marseille)",
+        "code": "",
+        "network": "TGV INOUI",
+        "links": [],
+        "color": "",
+        "name": "Paris Gare de Lyon Hall 1 &2 - Hy\u00e8res",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "6131",
+        "label": "Paris Gare de Lyon Hall 1 &2 - Hy\u00e8res",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "6131",
+        "commercial_mode": "TGV INOUI",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "secondary_id", "value": "SNCF:87686030" },
+              { "type": "secondary_id", "value": "SNCF:87758581" },
+              { "type": "source", "value": "87686006" },
+              { "type": "source", "value": "87686030" },
+              { "type": "source", "value": "87758581" },
+              { "type": "uic", "value": "87686006" },
+              { "type": "uic", "value": "87686030" },
+              { "type": "uic", "value": "87758581" }
+            ],
+            "name": "Paris Gare de Lyon Hall 1 &2",
+            "links": [],
+            "coord": { "lat": "48.844945", "lon": "2.373481" },
+            "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87686006"
+          },
+          "quality": 0,
+          "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "id": "stop_area:SNCF:87686006"
+        },
+        "name": "Paris Gare de Lyon Hall 1 &2 - Hy\u00e8res",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Paris Gare de Lyon Hall 1 &2 - Hy\u00e8res",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "closing_time": "010000",
+          "opening_time": "052100",
+          "commercial_mode": {
+            "id": "commercial_mode:OUI",
+            "name": "TGV INOUI"
+          },
+          "id": "line:SNCF:CSR:631200"
+        },
+        "id": "route:SNCF:CSR:631200"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:631200" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-10:6131:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:631200" },
+        { "type": "commercial_mode", "id": "commercial_mode:OUI" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:OUI" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210810T202400",
+        "additional_informations": [],
+        "departure_date_time": "20210810T202400",
+        "base_arrival_date_time": "20210810T202400",
+        "base_departure_date_time": "20210810T202400",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Lyon Perrache (Lyon)",
+        "code": "",
+        "network": "TGV INOUI",
+        "links": [],
+        "color": "",
+        "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "6633",
+        "label": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "6633",
+        "commercial_mode": "TGV INOUI",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "secondary_id", "value": "SNCF:87686030" },
+              { "type": "secondary_id", "value": "SNCF:87758581" },
+              { "type": "source", "value": "87686006" },
+              { "type": "source", "value": "87686030" },
+              { "type": "source", "value": "87758581" },
+              { "type": "uic", "value": "87686006" },
+              { "type": "uic", "value": "87686030" },
+              { "type": "uic", "value": "87758581" }
+            ],
+            "name": "Paris Gare de Lyon Hall 1 &2",
+            "links": [],
+            "coord": { "lat": "48.844945", "lon": "2.373481" },
+            "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87686006"
+          },
+          "quality": 0,
+          "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "id": "stop_area:SNCF:87686006"
+        },
+        "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "closing_time": "001530",
+          "opening_time": "054900",
+          "commercial_mode": {
+            "id": "commercial_mode:OUI",
+            "name": "TGV INOUI"
+          },
+          "id": "line:SNCF:CSR:601100"
+        },
+        "id": "route:SNCF:CSR:601100"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:601100" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-10:6633:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:601100" },
+        { "type": "commercial_mode", "id": "commercial_mode:OUI" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:OUI" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210810T204000",
+        "additional_informations": [],
+        "departure_date_time": "20210810T204000",
+        "base_arrival_date_time": "20210810T204000",
+        "base_departure_date_time": "20210810T204000",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Stade de France Saint-Denis (Saint-Denis)",
+        "code": "",
+        "network": "additional service",
+        "links": [
+          {
+            "internal": true,
+            "type": "disruption",
+            "id": "3c15b478-c235-4de8-84df-6c85fcadb878",
+            "rel": "disruptions",
+            "templated": false
+          }
+        ],
+        "color": "000000",
+        "name": "Corbeil-Essonnes - Stade de France Saint-Denis",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "122500-122501",
+        "label": "Corbeil-Essonnes - Stade de France Saint-Denis",
+        "equipments": [],
+        "text_color": "FFFFFF",
+        "trip_short_name": "122500-122501",
+        "commercial_mode": "additional service",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "source", "value": "87164780" },
+              { "type": "uic", "value": "87164780" }
+            ],
+            "name": "Stade de France Saint-Denis",
+            "links": [],
+            "coord": { "lat": "48.91779", "lon": "2.35134" },
+            "label": "Stade de France Saint-Denis (Saint-Denis)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87164780"
+          },
+          "quality": 0,
+          "name": "Stade de France Saint-Denis (Saint-Denis)",
+          "id": "stop_area:SNCF:87164780"
+        },
+        "name": "Corbeil-Essonnes - Stade de France Saint-Denis",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Corbeil-Essonnes - Stade de France Saint-Denis",
+          "links": [],
+          "color": "000000",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "commercial_mode": {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          },
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "text_color": "FFFFFF",
+          "id": "line:stop_area:SNCF:87681007_stop_area:SNCF:87164780"
+        },
+        "id": "route:stop_area:SNCF:87681007_stop_area:SNCF:87164780"
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:stop_area:SNCF:87681007_stop_area:SNCF:87164780"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:PIV:REALTIME:2021-08-11:122500-122501:1187:rail:suburbanRailway:FERRE:modified:0:3c15b478-c235-4de8-84df-6c85fcadb878"
+        },
+        {
+          "type": "route",
+          "id": "route:stop_area:SNCF:87681007_stop_area:SNCF:87164780"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:additional_service"
+        },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:additional_service" }
+      ],
+      "stop_date_time": {
+        "arrival_date_time": "20210811T052730",
+        "additional_informations": [],
+        "departure_date_time": "20210811T052830",
+        "links": [],
+        "data_freshness": "realtime"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Lyon Perrache (Lyon)",
+        "code": "",
+        "network": "TGV INOUI",
+        "links": [],
+        "color": "",
+        "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "6601",
+        "label": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "6601",
+        "commercial_mode": "TGV INOUI",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "secondary_id", "value": "SNCF:87686030" },
+              { "type": "secondary_id", "value": "SNCF:87758581" },
+              { "type": "source", "value": "87686006" },
+              { "type": "source", "value": "87686030" },
+              { "type": "source", "value": "87758581" },
+              { "type": "uic", "value": "87686006" },
+              { "type": "uic", "value": "87686030" },
+              { "type": "uic", "value": "87758581" }
+            ],
+            "name": "Paris Gare de Lyon Hall 1 &2",
+            "links": [],
+            "coord": { "lat": "48.844945", "lon": "2.373481" },
+            "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87686006"
+          },
+          "quality": 0,
+          "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "id": "stop_area:SNCF:87686006"
+        },
+        "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Paris Gare de Lyon Hall 1 &2 - Lyon Perrache",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "closing_time": "001530",
+          "opening_time": "054900",
+          "commercial_mode": {
+            "id": "commercial_mode:OUI",
+            "name": "TGV INOUI"
+          },
+          "id": "line:SNCF:CSR:601100"
+        },
+        "id": "route:SNCF:CSR:601100"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:601100" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-11:6601:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:601100" },
+        { "type": "commercial_mode", "id": "commercial_mode:OUI" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:OUI" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210811T054900",
+        "additional_informations": [],
+        "departure_date_time": "20210811T054900",
+        "base_arrival_date_time": "20210811T054900",
+        "base_departure_date_time": "20210811T054900",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Marseille Saint-Charles (Marseille)",
+        "code": "",
+        "network": "OUIGO",
+        "links": [],
+        "color": "",
+        "name": "Marseille Saint-Charles - Paris Gare de Lyon Hall 1 &2",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "7829",
+        "label": "Marseille Saint-Charles - Paris Gare de Lyon Hall 1 &2",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "7829",
+        "commercial_mode": "OUIGO",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "source", "value": "87751008" },
+              { "type": "uic", "value": "87751008" }
+            ],
+            "name": "Marseille Saint-Charles",
+            "links": [],
+            "coord": { "lat": "43.302666", "lon": "5.380407" },
+            "label": "Marseille Saint-Charles (Marseille)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87751008"
+          },
+          "quality": 0,
+          "name": "Marseille Saint-Charles (Marseille)",
+          "id": "stop_area:SNCF:87751008"
+        },
+        "name": "Marseille Saint-Charles - Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Marseille Saint-Charles - Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "closing_time": "211900",
+          "opening_time": "060000",
+          "commercial_mode": {
+            "id": "commercial_mode:TGVOUIGO",
+            "name": "OUIGO"
+          },
+          "id": "line:SNCF:CSR:633100"
+        },
+        "id": "route:SNCF:CSR:633100"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:633100" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-11:7829:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:633100" },
+        { "type": "commercial_mode", "id": "commercial_mode:TGVOUIGO" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:TGVOUIGO" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210811T060000",
+        "additional_informations": [],
+        "departure_date_time": "20210811T060000",
+        "base_arrival_date_time": "20210811T060000",
+        "base_departure_date_time": "20210811T060000",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Montpellier Saint-Roch (Montpellier)",
+        "code": "",
+        "network": "OUIGO",
+        "links": [],
+        "color": "",
+        "name": "Montpellier Sud de France - Paris Gare de Lyon Hall 1 &2",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "7871",
+        "label": "Montpellier Sud de France - Paris Gare de Lyon Hall 1 &2",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "7871",
+        "commercial_mode": "OUIGO",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "secondary_id", "value": "SNCF:87686030" },
+              { "type": "secondary_id", "value": "SNCF:87758581" },
+              { "type": "source", "value": "87686006" },
+              { "type": "source", "value": "87686030" },
+              { "type": "source", "value": "87758581" },
+              { "type": "uic", "value": "87686006" },
+              { "type": "uic", "value": "87686030" },
+              { "type": "uic", "value": "87758581" }
+            ],
+            "name": "Paris Gare de Lyon Hall 1 &2",
+            "links": [],
+            "coord": { "lat": "48.844945", "lon": "2.373481" },
+            "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87686006"
+          },
+          "quality": 0,
+          "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "id": "stop_area:SNCF:87686006"
+        },
+        "name": "Montpellier Sud de France - Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Montpellier Sud de France - Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "closing_time": "215000",
+          "opening_time": "060900",
+          "commercial_mode": {
+            "id": "commercial_mode:TGVOUIGO",
+            "name": "OUIGO"
+          },
+          "id": "line:SNCF:CSR:633300"
+        },
+        "id": "route:SNCF:CSR:633300"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:633300" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-11:7871:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:633300" },
+        { "type": "commercial_mode", "id": "commercial_mode:TGVOUIGO" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:TGVOUIGO" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210811T060900",
+        "additional_informations": [],
+        "departure_date_time": "20210811T060900",
+        "base_arrival_date_time": "20210811T060900",
+        "base_departure_date_time": "20210811T060900",
+        "data_freshness": "base_schedule"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "Corbeil-Essonnes (Corbeil-Essonnes)",
+        "code": "",
+        "network": "additional service",
+        "links": [
+          {
+            "internal": true,
+            "type": "disruption",
+            "id": "0a0040ef-f8eb-4f01-aa91-cfdf3cf015cf",
+            "rel": "disruptions",
+            "templated": false
+          }
+        ],
+        "color": "000000",
+        "name": "Creil - Corbeil-Essonnes",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "155802-155803",
+        "label": "Creil - Corbeil-Essonnes",
+        "equipments": [],
+        "text_color": "FFFFFF",
+        "trip_short_name": "155802-155803",
+        "commercial_mode": "additional service",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "source", "value": "87681007" },
+              { "type": "uic", "value": "87681007" }
+            ],
+            "name": "Corbeil-Essonnes",
+            "links": [],
+            "coord": { "lat": "48.614405", "lon": "2.47376" },
+            "label": "Corbeil-Essonnes (Corbeil-Essonnes)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:87681007"
+          },
+          "quality": 0,
+          "name": "Corbeil-Essonnes (Corbeil-Essonnes)",
+          "id": "stop_area:SNCF:87681007"
+        },
+        "name": "Creil - Corbeil-Essonnes",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "Creil - Corbeil-Essonnes",
+          "links": [],
+          "color": "000000",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "commercial_mode": {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          },
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            }
+          ],
+          "codes": [],
+          "text_color": "FFFFFF",
+          "id": "line:stop_area:SNCF:87276006_stop_area:SNCF:87681007"
+        },
+        "id": "route:stop_area:SNCF:87276006_stop_area:SNCF:87681007"
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:stop_area:SNCF:87276006_stop_area:SNCF:87681007"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:PIV:REALTIME:2021-08-11:155802-155803:1187:rail:suburbanRailway:FERRE:modified:0:0a0040ef-f8eb-4f01-aa91-cfdf3cf015cf"
+        },
+        {
+          "type": "route",
+          "id": "route:stop_area:SNCF:87276006_stop_area:SNCF:87681007"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:additional_service"
+        },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:additional_service" }
+      ],
+      "stop_date_time": {
+        "arrival_date_time": "20210811T061500",
+        "additional_informations": [],
+        "departure_date_time": "20210811T061600",
+        "links": [],
+        "data_freshness": "realtime"
+      }
+    },
+    {
+      "display_informations": {
+        "direction": "MILANO PORTA GARIBALDI (Milano)",
+        "code": "",
+        "network": "SNCF",
+        "links": [],
+        "color": "",
+        "name": "OULX CESANA CLAVIERE SESTRIERE - Serre-Chevalier-Gare-Routi\u00e8re",
+        "physical_mode": "Train grande vitesse",
+        "headsign": "9241",
+        "label": "OULX CESANA CLAVIERE SESTRIERE - Serre-Chevalier-Gare-Routi\u00e8re",
+        "equipments": [],
+        "text_color": "",
+        "trip_short_name": "9241",
+        "commercial_mode": "SNCF",
+        "description": ""
+      },
+      "stop_point": {
+        "commercial_modes": [
+          { "id": "commercial_mode:ELI", "name": "RENFE SNCF" },
+          { "id": "commercial_mode:IC", "name": "Intercit\u00e9s" },
+          { "id": "commercial_mode:LYR", "name": "TGV Lyria" },
+          { "id": "commercial_mode:OUI", "name": "TGV INOUI" },
+          { "id": "commercial_mode:SNF", "name": "SNCF" },
+          { "id": "commercial_mode:TER", "name": "TER" },
+          { "id": "commercial_mode:TGV", "name": "TGV" },
+          { "id": "commercial_mode:TGVOUIGO", "name": "OUIGO" },
+          {
+            "id": "commercial_mode:additional_service",
+            "name": "additional service"
+          }
+        ],
+        "name": "Paris Gare de Lyon Hall 1 &2",
+        "links": [],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "coord": { "lat": "48.844945", "lon": "2.373481" },
+        "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+        "equipments": [],
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+            "label": "Paris (75000-75116)",
+            "id": "admin:fr:75056",
+            "zip_code": "75000;75116"
+          }
+        ],
+        "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+        "stop_area": {
+          "codes": [
+            { "type": "secondary_id", "value": "SNCF:87686030" },
+            { "type": "secondary_id", "value": "SNCF:87758581" },
+            { "type": "source", "value": "87686006" },
+            { "type": "source", "value": "87686030" },
+            { "type": "source", "value": "87758581" },
+            { "type": "uic", "value": "87686006" },
+            { "type": "uic", "value": "87686030" },
+            { "type": "uic", "value": "87758581" }
+          ],
+          "name": "Paris Gare de Lyon Hall 1 &2",
+          "links": [],
+          "coord": { "lat": "48.844945", "lon": "2.373481" },
+          "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+          "administrative_regions": [
+            {
+              "insee": "75056",
+              "name": "Paris",
+              "level": 8,
+              "coord": { "lat": "48.8566969", "lon": "2.3514616" },
+              "label": "Paris (75000-75116)",
+              "id": "admin:fr:75056",
+              "zip_code": "75000;75116"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "id": "stop_area:SNCF:87686006"
+        }
+      },
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "stop_area": {
+            "codes": [
+              { "type": "source", "value": "83002048" },
+              { "type": "uic", "value": "83002048" }
+            ],
+            "name": "OULX CESANA CLAVIERE SESTRIERE",
+            "links": [],
+            "coord": { "lat": "45.038795", "lon": "6.831431" },
+            "label": "OULX CESANA CLAVIERE SESTRIERE (Oulx)",
+            "timezone": "Europe/Paris",
+            "id": "stop_area:SNCF:83002048"
+          },
+          "quality": 0,
+          "name": "OULX CESANA CLAVIERE SESTRIERE (Oulx)",
+          "id": "stop_area:SNCF:83002048"
+        },
+        "name": "OULX CESANA CLAVIERE SESTRIERE - Serre-Chevalier-Gare-Routi\u00e8re",
+        "links": [],
+        "physical_modes": [
+          { "id": "physical_mode:Coach", "name": "Autocar" },
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          }
+        ],
+        "is_frequence": "False",
+        "geojson": { "type": "MultiLineString", "coordinates": [] },
+        "direction_type": "forward",
+        "line": {
+          "code": "",
+          "name": "OULX CESANA CLAVIERE SESTRIERE - Serre-Chevalier-Gare-Routi\u00e8re",
+          "links": [],
+          "color": "",
+          "geojson": { "type": "MultiLineString", "coordinates": [] },
+          "text_color": "",
+          "physical_modes": [
+            {
+              "id": "physical_mode:LongDistanceTrain",
+              "name": "Train grande vitesse"
+            },
+            { "id": "physical_mode:Coach", "name": "Autocar" }
+          ],
+          "codes": [],
+          "closing_time": "221500",
+          "opening_time": "060000",
+          "commercial_mode": { "id": "commercial_mode:SNF", "name": "SNCF" },
+          "id": "line:SNCF:CSR:641100"
+        },
+        "id": "route:SNCF:CSR:641100"
+      },
+      "links": [
+        { "type": "line", "id": "line:SNCF:CSR:641100" },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2021-08-11:9241:1187:LongDistanceTrain"
+        },
+        { "type": "route", "id": "route:SNCF:CSR:641100" },
+        { "type": "commercial_mode", "id": "commercial_mode:SNF" },
+        { "type": "physical_mode", "id": "physical_mode:LongDistanceTrain" },
+        { "type": "network", "id": "network:SNCF:SNF" }
+      ],
+      "stop_date_time": {
+        "links": [],
+        "arrival_date_time": "20210811T062200",
+        "additional_informations": [],
+        "departure_date_time": "20210811T062200",
+        "base_arrival_date_time": "20210811T062200",
+        "base_departure_date_time": "20210811T062200",
+        "data_freshness": "base_schedule"
+      }
+    }
+  ],
+  "context": {
+    "timezone": "Europe/Paris",
+    "current_datetime": "20210810T192518"
+  },
+  "exceptions": []
+}

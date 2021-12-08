@@ -1,0 +1,43 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inline #6 | http://localhost:8080/ */
+
+.dropdown-options input {
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid currentColor;
+}
+
+.dropdown-options input:hover {
+  background-color: rgb(164, 21, 103);
+}
+
+.dropdown-options input {
+  cursor: pointer;
+}
+
+.dropdown:focus-within .dropdown-options {
+  visibility: visible;
+}
+
+/* Inline #3 | http://localhost:8080/ */
+
+.dropdown {
+  width: min-content;
+  margin: auto;
+}
+
+.dropdown-options {
+  visibility: hidden;
+}

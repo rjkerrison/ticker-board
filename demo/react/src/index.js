@@ -1,7 +1,6 @@
 import { render } from 'react-dom'
+import '../../../styles/main.css'
 
 import Layout from './Layout'
-
-import '../../../styles/main.css'
 
 render(<Layout />, document.getElementById('root'))
