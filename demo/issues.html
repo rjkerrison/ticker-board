@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticker Board</title>
+    <script src="../ticker-board/dist/ticker-board.js"></script>
+    <link rel="stylesheet" href="https://rjkerrison.co.uk/styles/header.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <script src="https://rjkerrison.co.uk/script/shared.js"></script>
+    <header>
+      <h1>Ticker Board: Known Issues</h1>
+      <p>
+        This is a showcase of known issues. When raising an issue, I'll try to
+        reproduce here.
+      </p>
+      <p>
+        For more information about this project, see the main
+        <a href="../index.html">Ticker Board</a>
+        page.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Issue 1: No Length Specified, Defaults To 1</h2>
+        <p>The board below was created without specifying a length.</p>
+        <div id="issue-1"></div>
+        <p>To fix this, we can specify a size for the board:</p>
+        <pre><code lang="javascript"
+          >const board = new Board('#issue-1', { delay: 50, count: 3, size: 7 })</code
+        ></pre>
+        <p>which results in the following:</p>
+        <div id="issue-1-workaround"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Robin James Kerrison {{currentYear}}</p>
+    </footer>
+    <script src="issues.js"></script>
+    <script src="../replacements.js"></script>
+  </body>
+</html>
