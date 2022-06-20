@@ -1,13 +1,16 @@
 {
   "name": "react-ticker-board",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React ready ticker board",
   "main": "dist/index.js",
   "author": "Robin James Kerrison",
   "license": "MIT",
   "dependencies": {
-    "react": "^17.0.2",
     "ticker-board": "^1.0.4"
+  },
+  "peerDependencies": {
+    "react-dom": ">=17.0.2",
+    "react": ">=17.0.2"
   },
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
@@ -23,7 +26,6 @@
     "@testing-library/react": "^12.1.2",
     "babel-jest": "^27.3.1",
     "jest": "^27.3.1",
-    "react-dom": "^17.0.2",
     "regenerator-runtime": "^0.13.9"
   }
 }
